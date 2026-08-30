@@ -32,7 +32,7 @@ form.addEventListener("submit", (noloadbrowser) => {
     return;
   }
 
-  if (monthInput.value === "" || month < 1 || month > 12) {
+  if (monthInput.value === "" || month < 0 || month > 11) {
     error.textContent = "Please select a valid month.";
     return;
   }
